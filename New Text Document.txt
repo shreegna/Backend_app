@@ -1,0 +1,1 @@
+MONGO_URI="mongodb+srv://shreegnakomire21_db_user:rb77gYC2l0U3WReZ@cluster0.gs4xxji.mongodb.net/mystoredb?appName=Cluster0"
