@@ -6,7 +6,7 @@ import session from "express-session";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import dbConnect from "./config/db.js";
-// import {productRouter} from "./routes/productRoute.js";
+import { productRouter } from "./routes/productRoute.js";
 import { storeRouter } from "./routes/storeRoute.js";
 const app = express();
 dotenv.config();
@@ -14,6 +14,7 @@ dotenv.config();
 app.use(expressLayouts);
 app.set("view engine", "ejs");
 app.set("views", "views");
+app.set("layout","layout")
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
@@ -27,7 +28,7 @@ app.use(
 
 app.use("/", storeRouter);
 // app.use("/auth", authRouter);
-// app.use("/products", productRouter);
+app.use("/products", productRouter);
 // app.use("/users", userRouter);
 
 const startServer = async () => {

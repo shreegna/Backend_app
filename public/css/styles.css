@@ -1,20 +1,27 @@
  
 /* Page background */
+*{
+    margin: 0px;
+}
 body{
     font-family: "Poppins", sans-serif;
-    margin:0;
-    padding:0;
-    background: linear-gradient(to right,#f5e6d3,#e8d3b0);
+     background: linear-gradient(to right,#f5e6d3,#e8d3b0);
 }
 
 /* Header */
-header{
+.header{
     background:#5c3a21;
+    display: flex;
+    justify-content: space-between;
     color:white;
-    padding:12px;
-    font-size:20px;
     font-weight:bold;
-    letter-spacing:1px;
+    padding: 10px;
+}
+.header li{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 10px;
+    font-size: 20px;
 }
 
 /* Product container */
@@ -69,13 +76,13 @@ header{
     font-size:18px;
 }
 
-/* Footer */
-footer{
+
+.footer{
     background:#5c3a21;
     color:white;
     text-align:center;
-    padding:10px;
-    margin-top:20px;
+    padding:5px;
+   
 }
 
 /*
